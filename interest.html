@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .result{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class=" container-fluid bg bg-dark" style="height:100vh;">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card m-5 p-5">
+                    <h4 class="text-center">Simple Interest Calculator</h4>
+                    <div class="form-group mt-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">&#8358;</div>
+                            </div>
+                            <input type="text" class="form-control" id="principal" placeholder="principal" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">%</div>
+                            </div>
+                            <input type="text" class="form-control" id="rate" placeholder="rate">
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="years" placeholder="years">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <button class="btn btn-block btn-primary" id="submit">submit</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">&#8358;</div>
+                                </div>
+                                <input type="text" class="form-control" id="simpleinterest" placeholder="simple Interest" disabled> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="interest.js"></script>
+</body>
+</html>
